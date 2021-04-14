@@ -1,0 +1,46 @@
+header.home-header { 
+    background-image: url("../headers/home-header.jpg");
+    height: 500px;
+    width: 1400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+    .background-list{
+        margin-top: 150px;
+
+        p{
+            font-size: 1.4em;
+            transform: rotate(-15deg);
+            margin-left: 250px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            width: fit-content;
+
+            &:hover{
+                color: red;
+            }
+    
+            &:nth-child(1){
+                margin-left: 260px;
+            }
+            &:nth-child(2){
+                margin-left: 275px;
+            }
+            &:nth-child(3){
+                margin-left: 287px;
+            }
+            &:nth-child(4){
+                margin-left: 300px;
+            }
+            &:nth-child(5){
+                margin-left: 315px;
+            }
+    }
+    }
+}

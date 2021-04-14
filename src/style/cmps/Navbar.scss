@@ -1,0 +1,75 @@
+nav {
+  height: 80px;
+  background: #f0f0f0;
+  width: 100%;
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+
+    .links {
+      height: 100%;
+      display: flex;
+
+      a {
+        border-bottom: transparent solid 5px;
+        height: 100%;
+        line-height: 80px;
+        transition: all 0.3s ease-in-out 0s;
+        margin: 0 20px;
+        position: relative;
+        transform: translateY(-5px);
+        color: black;
+
+        &:hover {
+          border-bottom: 5px solid red;
+          color: red;
+        }
+
+        &:active {
+          border-bottom: 5px solid red;
+          color: red;
+        }
+
+        &:focus {
+          color: red;
+          border-bottom: 5px solid red;
+        }
+      }
+    }
+  }
+
+  .nav-modal {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    height: 250px;
+    align-items: center;
+    div p {
+      width: 400px;
+    }
+
+    .modal-links {
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+
+      a {
+        margin: 5px 0;
+        padding: 10px 25px;
+        border-bottom: 1px solid #efefef;
+        color: black;
+        &:hover{
+          color: red;
+        }
+      }
+    }
+
+    .context {
+      margin-left: 100px;
+    }
+  }
+}
